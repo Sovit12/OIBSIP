@@ -21,17 +21,17 @@ public class ATM {
             }
             boolean exit = true;
             while (exit) {
-                System.out.println("1.Deposit");
+                System.out.println("1.Transaction History");
                 System.out.println("2.Withdraw");
-                System.out.println("3.Transaction History");
+                System.out.println("3.Deposit");
                 System.out.println("4.Transfer");
                 System.out.println("5.Quit");
                 System.out.println("6.Login");
                 int choice = input.nextInt();
                 switch (choice) {
-                    case 1 -> myAccount.deposit();
+                    case 1 -> myAccount.transactionHistory();
                     case 2 -> myAccount.withdraw();
-                    case 3 -> myAccount.transactionHistory();
+                    case 3 -> myAccount.deposit();
                     case 4 -> myAccount.transfer();
                     case 5 -> System.exit(0);
                     case 6 -> exit = false;
